@@ -1,0 +1,7 @@
+:root {
+  --main-color-1000: rgb(46, 7, 63);
+  --main-color-800: rgb(122, 28, 172);
+  --main-color-600: rgb(173, 73, 225);
+  --main-color-400: rgb(235, 211, 248);
+  --shadow-color-600: rgb(173, 73, 225, 0.4);
+}
