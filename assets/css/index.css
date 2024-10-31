@@ -43,7 +43,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0 1rem;
 }
 
 .content {
@@ -88,5 +89,116 @@ header {
 .typewritter {
   font-size: 2rem;
   font-weight: lighter;
+  /* padding-bottom: 2rem; */
 }
 
+
+.tech-stack-content {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tech-stack-images {
+  max-width: 64px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  transition: transform 0.2s;
+}
+
+/* Section Hero Ends */
+
+/* Section About Starts */
+
+.section-about {
+  background-color: var(--main-color-200);
+  color: var(--main-color-1000);
+}
+
+.about-article {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.about-article h1 {
+  padding-bottom: 1rem;
+}
+
+.about-article p {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.about-header {
+  width: 100%;
+}
+
+.about-media-wrapper, .media-wrapper {
+  flex: 1 0 35%;
+  max-width: 400px;
+  width: 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+.about-image, .generic-image {
+  width: 100%;
+}
+
+/* Section About Ends */
+
+/* Section Portfolio Starts */
+
+.section-portfolio {
+  background-color: var(--secondary-color-400);
+  color: var(--main-color-1000);
+}
+
+.portfolio-card {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+.portfolio-functionality-list {
+  padding-left: 1em;
+  padding-bottom: 1rem;;
+}
+
+.portfolio-article {
+  flex: 1 1 45%;
+}
+
+.portfolio-article-header {
+  padding-bottom: 2rem;
+}
+
+.portfolio-article-p {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.portfolio-functionality-list {
+  font-size: 1.3rem;
+}
+
+.portfolio-article .portfolio-article-p:last-of-type {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.stack-element {
+  padding: 0.3rem 0.7rem;
+  background-color: var(--main-color-1000);
+  color: var(--main-color-200);
+  font-weight: lighter;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.3rem 0 var(--main-color-800);
+}

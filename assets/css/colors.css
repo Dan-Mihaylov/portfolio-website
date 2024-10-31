@@ -3,5 +3,10 @@
   --main-color-800: rgb(122, 28, 172);
   --main-color-600: rgb(173, 73, 225);
   --main-color-400: rgb(235, 211, 248);
+  --main-color-200: rgb(245, 237, 253);
   --shadow-color-600: rgb(173, 73, 225, 0.4);
+  --secondary-color-1000: rgb(23, 21, 59);
+  --secondary-color-800: rgb(155, 126, 189);
+  --secondary-color-900: rgb(67, 61, 139);
+  --secondary-color-400: rgb(200, 172, 214);
 }
