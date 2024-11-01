@@ -141,6 +141,8 @@ header {
   width: 100%;
   min-width: 300px;
   overflow: hidden;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
 
 .about-image, .generic-image {
@@ -160,9 +162,13 @@ header {
   flex: 1 1 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
   padding: 2rem;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem 0 var(--shadow-color-600);
 }
 
 .portfolio-functionality-list {
