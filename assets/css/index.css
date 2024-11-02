@@ -44,7 +44,7 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 7rem 1rem;
 }
 
 .content {
@@ -156,6 +156,7 @@ header {
 .section-portfolio {
   background-color: var(--secondary-color-400);
   color: var(--main-color-1000);
+  padding: 7rem 1rem;
 }
 
 .portfolio-card {
@@ -207,4 +208,45 @@ header {
   font-size: 1rem;
   border-radius: 0.3rem;
   box-shadow: 0 0 0.3rem 0 var(--main-color-800);
+}
+
+/* Third child media wrapper rectangular */
+.portfolio-card:nth-child(3) .media-wrapper {
+  border-radius: 0;
+  aspect-ratio: auto;
+  height: auto;
+}
+
+/* Section Portfolio Ends */
+
+/* Section Certificates Starts */
+
+.section-certificates {
+  background-color: var(--main-color-200);
+}
+
+/* Section Certificates Ends */
+
+/* Media queries */
+
+@media (max-width: 600px) {
+  .section-hero {
+    text-align: center;
+  }
+
+  .content {
+    gap: 3rem;
+  }
+
+  .profile-image-wrapper {
+    flex-basis: 50%;
+  }
+
+  .tech-stack-images {
+    max-width: 36px;
+  }
+
+  .section-certificates {
+    padding: 0;
+  }
 }

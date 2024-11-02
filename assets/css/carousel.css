@@ -1,0 +1,73 @@
+.certificates-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 30px;
+  color: var(--main-color-1000);
+
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+  
+}
+
+
+.logo_container {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.logo_container:hover .carousel {
+  animation-play-state: paused;
+}
+
+/* .logo_container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(230, 144, 33, 0),  #eee);
+  content: "";
+  z-index: 2;
+} 
+
+.logo_container::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(2, 48, 71));
+  content: "";
+  z-index: 2;
+}  */
+
+.carousel {
+  animation: 40s slide infinite linear;
+  display: inline-block;
+}
+
+.carousel img {
+  height: 500px;
+  margin: 0 40px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 0.5em 0 var(--main-color-1000);
+}
