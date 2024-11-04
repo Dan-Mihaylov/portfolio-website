@@ -223,6 +223,30 @@ header {
 
 .section-certificates {
   background-color: var(--main-color-200);
+  padding-top: 0;
+}
+
+.cert-link-wrapper {
+  width: 100%;
+}
+
+.cert-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color-400);
+  color: var(--main-color-1000);
+  border-radius: 0.3rem;
+  /* box-shadow: 0 0 0.5rem 0 var(--shadow-color-600); */
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.cert-btn:hover {
+  background-color: var(--main-color-1000);
+  color: var(--main-color-200);
+}
+
+.cert-btn:not(:last-of-type) {
+  margin-right: 2rem;
 }
 
 /* Section Certificates Ends */
