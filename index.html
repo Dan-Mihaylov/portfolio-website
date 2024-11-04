@@ -10,19 +10,22 @@
 <body>
 
 <header>
+
+  <nav class="mobile-navigation">
+    <a id="nav-toggle-btn" <i class="fa-solid fa-ellipsis-vertical"></i></a>
+  </nav>
   <nav class="navigation">
     <ul class="nav-list">
-      <li><a href="#">About</a></li>
-      <!-- <li><a href="#">Tech Stack</a></li> -->
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Certificates</a></li>
-      <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a id="to-about">About</a></li>
+      <li><a id="to-portfolio">Portfolio</a></li>
+      <li><a id="to-certificates">Certificates</a></li>
+      <li><a href="https://github.com/Dan-Mihaylov"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/daniel-mihaylov-web-dev/"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/dan.mihaylov/"><i class="fa-brands fa-instagram"></i></a></li>
     </ul>
   </nav>
 </header>
-  
+
 <main>
 
   <section class="section section-hero">
@@ -57,11 +60,11 @@
 
   </section>
 
-  <section class="section section-about">
+  <section id="about" class="section section-about">
 
     <div class="content about-content">
       
-      <article class="about-article">
+      <article class="about-article zero-opacity">
         <h1 class="about-header">A Little Bit About Me</h1>
         <p>
           My name is <author>Daniel Mihaylov</author> a <strong>Junior Software Developer</strong> who's been actively coding for the past two years.
@@ -87,18 +90,18 @@
         <p></p>
       </article>
 
-      <div class="about-media-wrapper">
+      <div class="about-media-wrapper zero-opacity">
         <img class="about-image" src="assets/media/images/programmer.png" alt="Programmer">
       </div>
     </div>
 
   </section>
 
-  <section class="section section-portfolio">
+  <section id="portfolio" class="section section-portfolio">
 
     <div class="content portfolio-content">
 
-      <div class="portfolio-card">
+      <div class="portfolio-card zero-opacity">
         
         <div class="portfolio-media media-wrapper">
           <img class="portfolio-image generic-image" src="assets/media/logos/new-t.png" alt="Tinytalefactory logo">
@@ -159,7 +162,7 @@
 
       </div>
 
-      <div class="portfolio-card">
+      <div class="portfolio-card zero-opacity">
 
         <article class="portfolio-article">
           <h2 class="portfolio-article-header">
@@ -218,7 +221,7 @@
 
       </div>      
 
-      <div class="portfolio-card">
+      <div class="portfolio-card zero-opacity">
         
         <div class="portfolio-media media-wrapper">
           <img class="portfolio-image generic-image" src="assets/media/logos/tinyprojects.png" alt="Tinyprojects logo">
@@ -271,14 +274,15 @@
 
   </section>
 
-  <section class="section section-certificates">
+  <section id="certificates" class="section section-certificates">
     
     <div class="certificates-description">
                 
-      <h2> CERTIFICATES AND ACHIEVEMENTS </h2>
       <div class="cert-link-wrapper">
         <p>
           <a href="https://softuni.bg/certificates/details/225779/889ccfd9" class="cert-btn">Software Developer Diploma</a>
+        </p>
+        <p>
           <a  class="cert-btn">BBA Degree</a>
         </p>
       </div>
@@ -316,14 +320,49 @@
 
   </section>
 
+  <section id="contact" class="section section-contact">
+
+    <div class="content content-contact">
+
+      <div class="contact-header-wrapper">
+        <h3>Don't be a stranger</h3>
+      </div>
+
+      <div class="contact-socials-wrapper">
+        <a class="socials" href="https://github.com/Dan-Mihaylov"><i class="fa-brands fa-github"></i></a>
+        <a class="socials" href="https://www.linkedin.com/in/daniel-mihaylov-web-dev/"><i class="fa-brands fa-linkedin"></i>
+        <a class="socials" href="https://www.instagram.com/dan.mihaylov/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="socials leetcode" href="https://leetcode.com/u/danielMleetcode/"><i class="fa-solid fa-code"></i></a>
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
 
 <footer>
-
+  <p class="footer-paragraph">
+    &copy;<strong>Daniel Mihaylov</strong>
+  </p>
 </footer>
 
+<p class="to-top not-visible"><i class="fa-solid fa-angle-up"></i></p>
+
+<div id="overlay" class="navigation-overlay">
+  <ul class="mobile-nav-list">
+    <li><a id="to-about-mobile">ABOUT</a></li>
+    <li><a id="to-portfolio-mobile">PORTFOLIO</a></li>
+    <li><a id="to-certificates-mobile">CERTIFICATES</a></li>
+    <li><a href="https://github.com/Dan-Mihaylov"><i class="fa-brands fa-github"></i> GITHUB</a></li>
+    <li><a href="https://www.linkedin.com/in/daniel-mihaylov-web-dev/"><i class="fa-brands fa-linkedin"></i> LINKEDIN</a></li>
+    <li><a href="https://www.instagram.com/dan.mihaylov/"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a></li>
+  </ul>
+</div>
 
 </body>
+<script src="assets/js/scrollers.js"></script>
+<script src="assets/js/offset-regulator.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/nav-toggle.js"></script>
 </html>

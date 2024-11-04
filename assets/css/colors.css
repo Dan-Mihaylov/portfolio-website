@@ -9,4 +9,5 @@
   --secondary-color-800: rgb(155, 126, 189);
   --secondary-color-900: rgb(67, 61, 139);
   --secondary-color-400: rgb(200, 172, 214);
+  --secondary-color-transparent-400: rgb(200, 172, 214, 0.4);
 }

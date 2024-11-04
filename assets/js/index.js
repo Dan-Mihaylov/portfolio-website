@@ -15,4 +15,20 @@ function animateTechStack(index) {
   }, { once:true });
 }
 
-animateTechStack(currIndex);
+setTimeout(() => animateTechStack(currIndex), 3000);
+
+// Opacity Regulator
+const zeroOpacityItems = document.querySelectorAll('.zero-opacity');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('zero-opacity');
+    } else {
+      entry.target.classList.add('zero-opacity');
+    }
+  });
+});
+
+zeroOpacityItems.forEach(item => {
+  observer.observe(item);
+});

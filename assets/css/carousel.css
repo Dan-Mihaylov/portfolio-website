@@ -61,7 +61,8 @@
 
 .carousel {
   animation: 40s slide infinite linear;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .carousel img {
@@ -70,4 +71,9 @@
   border-radius: 10px;
   z-index: 1;
   box-shadow: 0 0 0.5em 0 var(--main-color-1000);
+  transition: height 0.3s linear;
+}
+
+.carousel img:hover {
+  height: 550px;
 }
