@@ -443,8 +443,14 @@ footer strong {
     max-width: 36px;
   }
 
-  .media-wrapper {
+  .portfolio-card {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .portfolio-card > .media-wrapper {
     max-width: 250px;
+    min-width: auto;
   }
 
   .portfolio-card:nth-last-of-type(2) {
