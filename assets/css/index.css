@@ -300,6 +300,9 @@ header {
 
 .cert-link-wrapper {
   width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .cert-btn {
@@ -440,6 +443,14 @@ footer strong {
     max-width: 36px;
   }
 
+  .media-wrapper {
+    max-width: 250px;
+  }
+
+  .portfolio-card:nth-last-of-type(2) {
+    flex-direction: column-reverse;
+  }
+
   .section-certificates {
     padding: 0;
   }
@@ -475,5 +486,13 @@ footer strong {
 
   .navigation {
     display: none;
+  }
+
+  .carousel img {
+    height: 400px;
+  }
+
+  .carousel img:hover {
+    height: 500px;
   }
 }
