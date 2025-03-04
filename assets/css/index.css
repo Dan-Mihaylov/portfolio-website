@@ -505,3 +505,7 @@ footer strong {
     height: 500px;
   }
 }
+
+.author {
+  display: none;
+}
