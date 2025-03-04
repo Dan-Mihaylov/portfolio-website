@@ -283,7 +283,16 @@ header {
 }
 
 /* Third child media wrapper rectangular */
-.portfolio-card:nth-child(4) .media-wrapper, .portfolio-card:nth-child(1) .media-wrapper {
+/* .portfolio-card:nth-child(4) .media-wrapper, .portfolio-card:nth-child(1) .media-wrapper {
+  border-radius: 0.5rem;
+  aspect-ratio: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.portfolio-card .flex-it-baby-rect {
   border-radius: 0.5rem;
   aspect-ratio: auto;
   height: auto;
